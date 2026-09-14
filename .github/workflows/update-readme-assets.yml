@@ -3,7 +3,7 @@ name: Update WordPress.org Assets and Readme
 on:
   push:
     branches:
-      - main # or other branch (eg: master)
+      - main
     paths:
       - '.wordpress-org/**'
       - 'build/readme.txt'
@@ -15,10 +15,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 1. Copy readme from build to root
+      - name: Copy readme to root
+        run: cp build/readme.txt readme.txt
+
+      # 2. Deploy via 10up action
       - name: WordPress.org Assets & Readme Deploy
         uses: 10up/action-wordpress-plugin-asset-update@stable
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-          README_NAME: 'build/readme.txt'
           IGNORE_OTHER_FILES: 'true'
+
