@@ -57,6 +57,10 @@ Yes. Enable the library under **Backend** and leave **Frontend** disabled.
 
 Yes. Both options can be enabled independently.
 
+== Screenshots ==
+
+1. Kotti Libs library management page.
+
 == Changelog ==
 
 = 1.0.1 =
