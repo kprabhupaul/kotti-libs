@@ -59,7 +59,7 @@ Yes. Both options can be enabled independently.
 
 == Screenshots ==
 
-1. Kotti Libs library management page.
+1. Kotti Libs simple library management page.
 
 == Changelog ==
 
