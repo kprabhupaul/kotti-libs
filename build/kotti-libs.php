@@ -3,7 +3,7 @@
  * Plugin Name:       Kotti Libs
  * Plugin URI:        https://github.com/kprabhupaul/kottilibs
  * Description:       Manage and enqueue CSS and JavaScript libraries on the WordPress frontend and backend.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Requires at least: 6.0
  * Requires PHP:      8.1
  * Author:            Pratap Kumar Kotti
